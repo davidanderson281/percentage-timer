@@ -1,0 +1,22 @@
+.content {
+    background-color: rgb(92, 91, 91);
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.percentage {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Orbitron', sans-serif;
+    font-size: xx-large;
+}
+
+.tooltip {
+    font-size: medium;
+}
