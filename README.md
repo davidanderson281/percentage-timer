@@ -1,6 +1,8 @@
 # PercentageTimer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.</br>
+Deployed on Netlify: <a href="https://fascinating-selkie-aac752.netlify.app/">Link to deployed version</a></br>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd6b7131-582e-4d76-b969-bf00769aa75d/deploy-status)](https://app.netlify.com/sites/fascinating-selkie-aac752/deploys)
 
 ## Development server
 
