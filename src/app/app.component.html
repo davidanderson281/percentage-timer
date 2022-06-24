@@ -1,15 +1,30 @@
 <div class="content">
   <div class="percentage">
-    <!-- <div #tooltip="matTooltip" matTooltip="{{ time | date: 'hh:mm:ss' | removeTwelveFromTime }} left"
-      matTooltipPosition="above" matTooltipClass="tooltip" matTooltipHideDelay="1000">{{ percentage | number: '1.2-2'}}%
-    </div>
-    <div>Shift completed</div>
-    <mat-progress-bar mode="determinate" value="{{percentage}}"></mat-progress-bar> -->
     <circle-progress #tooltip="matTooltip" matTooltip="{{ time | date: 'hh:mm:ss' | removeTwelveFromTime }}"
       matTooltipPosition="above" matTooltipClass="tooltip" matTooltipHideDelay="1000" [percent]="percentage"
       [radius]="200" [outerStrokeWidth]="11" [outerStrokeColor]="'gold'" [titleColor]="'#FFFFFF'"
       [unitsColor]="'#FFFFFF'" [subtitleColor]="'#FFFFFF'" [animation]="false" [animationDuration]="300" [toFixed]="2"
-      [showInnerStroke]="false">
+      [showInnerStroke]="false" [subtitle]="subtitle" [responsive]="true">
     </circle-progress>
+  </div>
+  <div class="form">
+    <div>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label class="label">Subtitle</mat-label>
+        <input matInput [value]="subtitle" maxlength="15" [ngModel]="subtitle" (ngModelChange)="modelChangeFn($event)">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label class="label">Start time</mat-label>
+        <input matInput type="time" [value]="startTimeString" [(ngModel)]="startTimeString" (ngModelChange)="modelChangeStartTime($event)">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label class="label">End time</mat-label>
+        <input matInput type="time" [value]="endTimeString" [(ngModel)]="endTimeString" (ngModelChange)="modelChangeEndTime($event)">
+      </mat-form-field>
+    </div>
   </div>
 </div>

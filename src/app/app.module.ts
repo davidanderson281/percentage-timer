@@ -7,6 +7,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RemoveTwelveFromTimePipe } from './remove-twelve-from-time.pipe';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       animationDuration: 300,
       titleFontSize: "60",
       unitsFontSize: "60",
-      subtitleFontSize: "40",
-      subtitle: "Shift completed"
-    })
+      subtitleFontSize: "40"
+    }),
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
